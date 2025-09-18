@@ -16,10 +16,10 @@ void draw()
   stroke(255-changeColor,255-changeColor,255-changeColor);
   while(endY <= 500){
     if(direction == false)
-      endX = startX-(int)(Math.random()*9);
+      endX = startX-(int)(Math.random()*10);
     else
-      endX = startX+(int)(Math.random()*9);
-    endY = startY+(int)(Math.random()*9);
+      endX = startX+(int)(Math.random()*10);
+    endY = startY+(int)(Math.random()*10);
     line(startX, startY, endX, endY);
     startX = endX;
     startY = endY;
