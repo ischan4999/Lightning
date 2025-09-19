@@ -8,6 +8,7 @@ void setup()
 {
   size(500,500);
   background(0,0,0);
+  frameRate(10);
 }
 
 void draw()
@@ -28,6 +29,11 @@ void draw()
     else
       direction = false;  
   }
+  noStroke();
+  fill(200,200,200);
+  ellipse(150,0,150,150);
+  ellipse(250,20,150,150);
+  ellipse(350,0,150,150);
 }
 
 void mousePressed()
